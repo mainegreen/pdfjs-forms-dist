@@ -1,4 +1,4 @@
-# PDF.js ![npm](https://img.shields.io/npm/v/pdfjs-forms-dist.svg?style=for-the-badge)
+# PDF.js [![npm](https://img.shields.io/npm/v/pdfjs-forms-dist.svg?style=flat-square)](https://www.npmjs.com/package/pdfjs-forms-dist)
 
 PDF.js is a Portable Document Format (PDF) library that is built with HTML5.
 Our goal is to create a general-purpose, web standards-based platform for
