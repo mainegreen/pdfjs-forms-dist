@@ -24,11 +24,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/build/pdf", [], factory);
+		define("pdfjs-forms-dist/build/pdf", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/build/pdf"] = factory();
+		exports["pdfjs-forms-dist/build/pdf"] = factory();
 	else
-		root["pdfjs-dist/build/pdf"] = root.pdfjsLib = factory();
+		root["pdfjs-forms-dist/build/pdf"] = root.pdfjsLib = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -123,8 +123,8 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 
-var pdfjsVersion = '2.2.215';
-var pdfjsBuild = 'cefd0fb5';
+var pdfjsVersion = '2.2.219';
+var pdfjsBuild = '713e4aff';
 
 var pdfjsSharedUtil = __w_pdfjs_require__(1);
 
@@ -9829,7 +9829,7 @@ var fakeWorkerFilesLoader = null;
   }
 
   if (typeof requirejs !== 'undefined' && requirejs.toUrl) {
-    fallbackWorkerSrc = requirejs.toUrl('pdfjs-dist/build/pdf.worker.js');
+    fallbackWorkerSrc = requirejs.toUrl('pdfjs-forms-dist/build/pdf.worker.js');
   }
 
   var dynamicLoaderSupported = typeof requirejs !== 'undefined' && requirejs.load;
@@ -9847,7 +9847,7 @@ var fakeWorkerFilesLoader = null;
     });
   } : dynamicLoaderSupported ? function () {
     return new Promise(function (resolve, reject) {
-      requirejs(['pdfjs-dist/build/pdf.worker'], function (worker) {
+      requirejs(['pdfjs-forms-dist/build/pdf.worker'], function (worker) {
         try {
           resolve(worker.WorkerMessageHandler);
         } catch (ex) {
@@ -10038,7 +10038,7 @@ function _fetchDocument(worker, source, pdfDataRangeTransport, docId) {
 
   return worker.messageHandler.sendWithPromise('GetDocRequest', {
     docId: docId,
-    apiVersion: '2.2.215',
+    apiVersion: '2.2.219',
     source: {
       data: source.data,
       url: source.url,
@@ -12185,9 +12185,9 @@ var InternalRenderTask = function InternalRenderTaskClosure() {
   return InternalRenderTask;
 }();
 
-var version = '2.2.215';
+var version = '2.2.219';
 exports.version = version;
-var build = 'cefd0fb5';
+var build = '713e4aff';
 exports.build = build;
 
 /***/ }),

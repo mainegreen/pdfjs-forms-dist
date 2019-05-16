@@ -24,11 +24,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/web/pdf_viewer", [], factory);
+		define("pdfjs-forms-dist/web/pdf_viewer", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/web/pdf_viewer"] = factory();
+		exports["pdfjs-forms-dist/web/pdf_viewer"] = factory();
 	else
-		root["pdfjs-dist/web/pdf_viewer"] = root.pdfjsViewer = factory();
+		root["pdfjs-forms-dist/web/pdf_viewer"] = root.pdfjsViewer = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -253,8 +253,8 @@ var _pdf_single_page_viewer = __w_pdfjs_require__(19);
 
 var _pdf_viewer = __w_pdfjs_require__(21);
 
-var pdfjsVersion = '2.2.215';
-var pdfjsBuild = 'cefd0fb5';
+var pdfjsVersion = '2.2.219';
+var pdfjsBuild = '713e4aff';
 (0, _ui_utils.getGlobalEventBus)(true);
 
 /***/ }),
@@ -1098,8 +1098,8 @@ module.exports = function (module) {
 
 var pdfjsLib;
 
-if (typeof window !== 'undefined' && window['pdfjs-dist/build/pdf']) {
-  pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (typeof window !== 'undefined' && window['pdfjs-forms-dist/build/pdf']) {
+  pdfjsLib = window['pdfjs-forms-dist/build/pdf'];
 } else {
   pdfjsLib = require('../build/pdf.js');
 }
