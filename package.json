@@ -1,6 +1,6 @@
 {
   "name": "pdfjs-forms-dist",
-  "version": "2.0.1",
+  "version": "2.1.266",
   "main": "build/pdf.js",
   "description": "Generic build of Mainegreen's forms fork of Mozilla's PDF.js library.",
   "keywords": [
